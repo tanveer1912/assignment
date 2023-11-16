@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.0.8/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="container mx-auto mt-3">
+        <div class="navbar bg-slate-200 px-7 rounded-md">
+            <div>
+                <a class="text-2xl font-semibold">Interactive <br>
+                    <span class="text-base">Geometry Genius</span></a>
+                <p></p>
+            </div>
+            <div class="ms-auto">
+                <button class="bg-blue-700 px-6 py-2 text-white rounded-lg">
+                    Blog
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-11">
+        <div class="lg:grid lg:grid-cols-4 gap-4">
+            <div class=" col-start-1 col-span-3 grid lg:grid-cols-3 gap-4">
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/triangle.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Triangle</h2>
+                    <p class="pb-5">Area (A) = 0.5 x b x h</p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="h"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/rectangle.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Rectangle</h2>
+                    <p class="pb-5">Area (A) = w x l</p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="w">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="l"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/parallelogram.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Parallelogram</h2>
+                    <p class="pb-5">Area (A) = b x h</p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="h"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/rhombus.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Rhombus</h2>
+                    <p class="pb-5">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="d1 = 16">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="d2 = 8"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/pentagon.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Pentagon</h2>
+                    <p class="pb-5">Area (A) = 0.5 x p x b</p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="p">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="b"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+                <div class="border p-6 text-center rounded-sm">
+                    <img class="w-full h-2/4" src="images/ellipse.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold pt-8 pb-1">Ellipse</h2>
+                    <p class="pb-5">Area (A) =pi ab</p>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="a">
+                    <span>cm</span>
+                    <input class="w-24 bg-slate-200 rounded-sm ps-2" type="text" placeholder="b"> <span>cm</span>
+                    <button class="bg-blue-500 mt-6 px-24 py-2 rounded-md text-white font-bold">Calculate</button>
+                </div>
+
+
+            </div>
+            <div>
+                <h1 class="text-center font-bold text-xl">Area Calculation</h1>
+                <hr class="bg-black h-0.5">
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="js/common.js"></script>
+    <script src="js/geo.js"></script>
+</body>
+
+</html>
